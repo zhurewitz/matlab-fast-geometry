@@ -1,5 +1,7 @@
 %% Line Intersect Fast
-%https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection
+% Copyright (C) 2024 Zel Hurewitz
+% SPDX-License-Identifier: GPL-3.0-or-later
+% Based off: https://en.wikipedia.org/wiki/Line%E2%80%93line_intersection
 
 function INTERSECT= lineintersectfast(vx1,vy1,vx2,vy2)
 
