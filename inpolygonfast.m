@@ -1,4 +1,7 @@
 %% INPOLYGON FAST
+% Copyright (C) 2024 Zel Hurewitz
+% SPDX-License-Identifier: GPL-3.0-or-later
+
 
 function IN= inpolygonfast(X,Y,VX,VY)
 
@@ -107,3 +110,9 @@ Iend= Iend(Igood);
 Value= A(Istart);
 
 end
+
+
+
+
+
+
