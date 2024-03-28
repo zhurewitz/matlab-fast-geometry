@@ -8,3 +8,12 @@
 *.tiff
 *.kml
 *.kmz
+*.xls
+*.xlsx
+*.pdf
+*.txt
+*.TXT
+*.zip
+*.DS_store
+*.nc
+*.h5
