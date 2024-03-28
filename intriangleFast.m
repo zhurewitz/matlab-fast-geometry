@@ -1,7 +1,16 @@
 %% IN TRIANGLE FAST
 % Copyright (C) 2024 Zel Hurewitz
 % SPDX-License-Identifier: GPL-3.0-or-later
+% 
 % Determine if a set of points (X,Y) are inside a set of triangles (TX,TY)
+% Input: 
+%   X - (N x 1) x-locations of query points
+%   Y - (N x 1) y-locations of query points
+%   TX- (NT x 3) x-positions of triangle vertices
+%   TY- (NT x 3) y-positions of triangle vertices
+% Output:
+%   IN- (NT x N logical) IN(j,i) means that the j-th point is inside the
+%   i-th triangle
 
 function IN= intriangleFast(X,Y,TX,TY)
 
