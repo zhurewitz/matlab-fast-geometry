@@ -9,8 +9,8 @@
 %   TX- (NT x 3) x-positions of triangle vertices
 %   TY- (NT x 3) y-positions of triangle vertices
 % Output:
-%   IN- (NT x N logical) IN(j,i) means that the j-th point is inside the
-%   i-th triangle
+%   IN- (N x NT logical) IN(j,i) means that the i-th point is inside the
+%   j-th triangle
 
 function IN= intriangleFast(X,Y,TX,TY)
 
