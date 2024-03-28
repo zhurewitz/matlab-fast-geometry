@@ -1,7 +1,17 @@
 %% INPOLYGON FAST
 % Copyright (C) 2024 Zel Hurewitz
 % SPDX-License-Identifier: GPL-3.0-or-later
-
+% 
+% Quickly checks if a set of points given by X,Y are inside a single
+% polygon (not necessarily contiguous) defined by the vertices VX,VY
+% Input:
+%   X - (N x 1) x-positions of query points
+%   Y - (N x 1) y-positions of query points
+%   VX- (Nv x 1) x-positions of vertices
+%   VY- (Nv x 1) y-positions of vertices
+% Output:
+%   IN- (N x 1 logical) IN(i) is true if that the point (X(i),Y(i)) is
+%   inside the polygon
 
 function IN= inpolygonfast(X,Y,VX,VY)
 
