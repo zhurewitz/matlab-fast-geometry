@@ -25,7 +25,8 @@ for i= 1:length(Istart)
     if Value(i)
         I= Istart(i):Iend(i);
 
-        IN= IN | inpolygonfastContiguous(X,Y,VX(I),VY(I));
+        % IN= IN | inpolygonfastContiguous(X,Y,VX(I),VY(I));
+        IN= xor(IN,inpolygonfastContiguous(X,Y,VX(I),VY(I)));
     end
 end
 
